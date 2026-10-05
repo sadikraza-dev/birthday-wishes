@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d1a">
+  <title>Happy Birthday, Khushiii!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="experience">
+    <section class="page cover active" id="page1" aria-label="Birthday greeting">
+      <div class="cover-stars" aria-hidden="true"></div>
+      <div class="cover-content">
+        <p class="kicker">A LITTLE SURPRISE FOR YOU</p>
+        <h1>HAPPY BIRTHDAY<br><span>KHUSHIII!</span></h1>
+        <div class="cake" aria-hidden="true">🎂</div>
+        <button class="primary-button" id="openSurpriseButton" data-next="page2">Open your birthday surprise <span>→</span></button>
+      </div>
+      <span class="page-count">01 <i></i> 04</span>
+    </section>
+
+    <section class="page group-page" id="page2" aria-label="Mafiya Group birthday page" hidden>
+      <div class="content-card">
+        <p class="kicker">A PLACE THAT GOT MORE FUN</p>
+        <div class="music-player" id="musicPlayer" hidden>
+          <span>🎵 &nbsp; Khushi’s birthday song</span>
+          <audio id="birthdayAudio" controls preload="auto">
+            <source src="birthday-audio.mp4" type="audio/mp4">
+            Your browser does not support this audio file.
+          </audio>
+          <span id="musicMessage" class="music-message" aria-live="polite"></span>
+        </div>
+        <h1 class="group-birthday-title">HAPPY BIRTHDAY <span>KHUSHIII!</span></h1>
+        <div class="group-layout">
+          <div class="answer-panel">
+            <div class="member-label">YOUR MEMORY</div>
+            <label class="question-label" for="groupFeeling">How did you feel after being added to the group?</label>
+            <p class="hint">Tell us what you remember. Your answer saves automatically.</p>
+            <textarea id="groupFeeling" rows="7" placeholder="Write your answer here…"></textarea>
+            <p class="save-status" id="answerSaveStatus" aria-live="polite"></p>
+          </div>
+          <div class="group-center">
+            <div class="member-label">MAFIYA GROUP · 6th MEMBER</div>
+            <img class="group-photo" src="mafiya-group.jpg" alt="Mafiya Group welcoming Khushi as its newest member">
+          </div>
+          <div class="birthday-wish">
+            <div class="member-label">A WISH FOR YOU 💌</div>
+            <p>Best wishes to my cutie pie friend Khushiiiii! 💖 May your days be filled with laughter, joy, and beautiful moments. I hope all your dreams come true, one by one, because you deserve all the happiness in the world. 🌸 Thank you for being such a lovely friend and for always making life brighter. 🫶 Keep smiling, keep shining, and stay as amazing as you are! ✨ I’m so lucky to have you in my life. Wishing you lots of love, success, and fun today and always! 🎉💕</p>
+          </div>
+        </div>
+        <section class="friend-gallery" aria-label="Khushi's photos">
+          <h2>A few favorite moments</h2>
+          <div class="friend-gallery-grid">
+            <img src="khushi-memory-1.jpeg" alt="Khushi smiling in a traditional outfit">
+            <img src="khushi-memory-2.jpeg" alt="Khushi at a decorated temple">
+            <img src="khushi-memory-3.jpeg" alt="A close-up photo of Khushi">
+            <img src="khushi-memory-4.jpeg" alt="Khushi in a blue outfit">
+          </div>
+        </section>
+        <button class="primary-button" data-next="page3">Continue <span>→</span></button>
+      </div>
+      <button class="back-button" data-back="page1">← Back</button>
+      <span class="page-count">02 <i></i> 04</span>
+    </section>
+
+    <section class="page moon-page" id="page3" aria-label="Moon and photo memories" hidden>
+      <div class="moon-orb" aria-hidden="true"></div>
+      <div class="moon-content">
+        <p class="kicker">A LITTLE SOMETHING JUST FOR YOU</p>
+        <h2>Click here to see<br><span>a beautiful moon</span></h2>
+        <button class="moon-button" id="moonButton" type="button">Click here to see the moon <span>☾</span></button>
+        <div class="moon-reveal" id="moonReveal" aria-live="polite">
+          <div class="moon-visual" role="img" aria-label="A beautiful glowing moon"></div>
+          <p>Even the moon has some competition tonight. 🌙</p>
+        </div>
+        <div class="camera-panel" id="cameraPanel" aria-live="polite" hidden>
+          <video id="cameraPreview" autoplay playsinline muted></video>
+          <p id="cameraMessage">Camera preview</p>
+          <button class="camera-close" id="cameraClose" type="button">Turn camera off</button>
+        </div>
+        <div class="photo-area">
+          <label class="upload-button" for="photoInput">＋ &nbsp; Add your pictures</label>
+          <input id="photoInput" type="file" accept="image/*" multiple hidden>
+          <p>Add the photos you want to share with Khushi.</p>
+          <div class="gallery" id="gallery" aria-live="polite"></div>
+        </div>
+        <section class="provided-media" aria-label="Birthday photo and video">
+          <h3>A little birthday memory</h3>
+          <p class="movie-favorite">Your favourite movie is <strong>“SHIDDHAT”</strong> 🎬</p>
+          <img src="khushi-birthday.jpeg" alt="Birthday photo for Khushi">
+        <video src="friend-video.mp4" controls playsinline preload="metadata" aria-label="Birthday video for Khushi"></video>
+        <video src="insta-video.mp4" controls playsinline preload="metadata" aria-label="Birthday video for Khushi"></video>
+        <video src="wishes-video.mp4  " controls playsinline preload="metadata" aria-label="Birthday video for Khushi"></video>
+      </section>
+      </div>
+      <button class="back-button" data-back="page2">← Back</button>
+      <button class="primary-button next-last" data-next="page4">One last thing <span>→</span></button>
+      <span class="page-count">03 <i></i> 04</span>
+    </section>
+
+    <section class="page thanks-page" id="page4" aria-label="Thank you message" hidden>
+      <div class="thanks-content">
+        <p class="kicker">THE END… BUT THE MEMORIES STAY</p>
+        <div class="envelope" aria-hidden="true">💌</div>
+        <h2>THANK<br><span>YOU!</span></h2>
+        <p class="thanks-message">For being part of our group and making it a little more special. Hope your birthday is as lovely as you are!</p>
+        <p class="regards">With love and best wishes,<br><strong>Regards, Sadik</strong></p>
+        <button class="replay-button" id="replayButton">↻ &nbsp; Start again</button>
+      </div>
+      <span class="page-count">04 <i></i> 04</span>
+    </section>
+  </main>
+</body>
+</html>
